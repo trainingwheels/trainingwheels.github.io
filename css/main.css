@@ -340,6 +340,37 @@ button:active, button.active {
   padding-left: 1em;
   padding-right: 1em;
 }
+.header .screencast {
+  text-align: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  color: #f2f2f2;
+  max-width: 50em;
+  margin: 0 auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+@media only screen and (min-width: 480px) {
+  .header .screencast {
+    padding-bottom: 4em;
+    padding-top: 4em;
+  }
+}
+.header .screencast iframe {
+  border: none;
+  width: 300px;
+  height: 330px;
+}
+@media only screen and (min-width: 480px) {
+  .header .screencast iframe {
+    border: 15px solid rgba(0, 0, 0, 0.5);
+    width: 600px;
+    height: 645px;
+  }
+}
 
 .features {
   padding-top: 1em;

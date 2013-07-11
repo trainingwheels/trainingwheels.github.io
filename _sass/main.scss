@@ -25,8 +25,8 @@
     text-align: center;
     padding-top: 50px;
     padding-bottom: none;
-    @include respond-to(iphone) { 
-      padding-bottom: 50px; 
+    @include respond-to(iphone) {
+      padding-bottom: 50px;
     }
     h1 {
       font-family: $bebas;
@@ -34,22 +34,22 @@
       margin-bottom: .2em;
       padding-top: .6em;
       color: $yellow;
-      line-height: .9em; 
+      line-height: .9em;
     }
     h3 {
       font-weight: 600;
       font-size: 26px;
       color: $lightGray;
-      line-height: 1.2em; 
+      line-height: 1.2em;
     }
   }
   .notify {
     text-align: center;
     padding-bottom: 2em;
     padding-top: 2em;
-    @include respond-to(iphone) { 
-      padding-bottom: 4em; 
-      padding-top: 4em; 
+    @include respond-to(iphone) {
+      padding-bottom: 4em;
+      padding-top: 4em;
     }
     color: $lightGray;
     background-color: rgba(0, 0, 0, 0.5);
@@ -64,14 +64,39 @@
     p {
     padding-left: 1em;
     padding-right: 1em;
-    }    
+    }
+  }
+
+  .screencast {
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    @include respond-to(iphone) {
+      padding-bottom: 4em;
+      padding-top: 4em;
+    }
+    color: $lightGray;
+    max-width: 50em;
+    margin: 0 auto;
+    iframe {
+      border: none;
+      width: 300px;
+      height: 330px;
+
+      @include respond-to(iphone) {
+        border: 15px solid rgba(0, 0, 0, 0.5);
+        width: 600px;
+        height: 645px;
+      }
+    }
+    @include border-radius(5px);
   }
 }
 .features {
   padding-top: 1em;
   padding-bottom: 4em;
   background: $lightGray;
-  @include respond-to(ipad) { 
+  @include respond-to(ipad) {
     padding-top: 4em;
   }
   h2 {
@@ -81,13 +106,13 @@
   }
   .description-left {
     @include span-columns(12);
-     @include respond-to(ipad) { 
+     @include respond-to(ipad) {
        @include span-columns(5);
        @include respond-to (desktop) {
          @include span-columns(4);
-         @include respond-to(widescreen) { 
-           @include span-columns(6); 
-         } 
+         @include respond-to(widescreen) {
+           @include span-columns(6);
+         }
        }
      }
     margin-top: 2em;
@@ -95,18 +120,18 @@
   .description-right {
     @include span-columns(12);
     margin-bottom: 2em;
-    @include respond-to(ipad) { 
+    @include respond-to(ipad) {
       @include span-columns(5);
       margin-top: 4em;
       float: right;
       @include respond-to (desktop) {
         @include span-columns(4);
         float: right;
-        @include respond-to(widescreen) { 
-           @include span-columns(6); 
+        @include respond-to(widescreen) {
+           @include span-columns(6);
            margin-top: 4em;
            float: right;
-        } 
+        }
       }
     }
     margin-top: 2em;
@@ -116,16 +141,16 @@
     @include span-columns(12 omega, 12);
     @include respond-to (iphone) {
       @include span-columns(9 omega, 12);
-      @include respond-to(ipad) { 
+      @include respond-to(ipad) {
         float: right;
         height: auto;
         width: 50%;
-        @include respond-to(widescreen) { 
+        @include respond-to(widescreen) {
           float: right;
           height: auto;
-          width: auto;      
+          width: auto;
         }
-      }       
+      }
     }
   }
   #cloud {
@@ -140,13 +165,13 @@
         margin-right: .5em;
         margin-bottom: 4em;
         margin-top: 3em;
-        @include respond-to(widescreen) { 
+        @include respond-to(widescreen) {
           float: left;
           height: auto;
           width: auto;
           margin-right: .5em;
-          margin-bottom: 4em;      
-        } 
+          margin-bottom: 4em;
+        }
       }
     }
   }
@@ -158,9 +183,9 @@
   padding-top: 3em;
   .step-one, .step-two, .step-three {
     @include span-columns(12);
-    @include respond-to(ipad) { 
+    @include respond-to(ipad) {
       @include span-columns(3.5);
-      margin-right: 0; 
+      margin-right: 0;
     }
     color: $lightGray;
     .step-one-circle, .step-two-circle, .step-three-circle {
@@ -183,11 +208,11 @@
     }
   }
   .step-one, .step-two {
-    margin-right: 1.5em;   
+    margin-right: 1.5em;
   }
   .step-three, .step-two {
     padding-left: 0;
-    @include respond-to(ipad) { 
+    @include respond-to(ipad) {
       padding-left: 1.5em;
     }
   }
@@ -210,13 +235,13 @@
   span {
     @include span-columns(12);
     margin-top: 2em;
-    @include respond-to(ipad) { 
+    @include respond-to(ipad) {
       @include span-columns(7 omega, 12);
       margin-top: 2em;
     }
     a {
       font-size: 18px;
-      font-weight: 700;	
+      font-weight: 700;
       color: $blackGray;
     }
   }
